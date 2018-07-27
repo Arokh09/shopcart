@@ -1,0 +1,8 @@
+<p>всего товаров: {{ shopcart.length }}.</p>
+<p>На сумму: {{ totalCost }}</p>
+<p>Список товаров:</p>
+<ol>
+	<li ng-repeat="item in shopcart">
+		{{ item.name }} ({{ item.cost }} р.)
+	</li>
+</ol>

@@ -1,0 +1,17 @@
+<div class="row">
+	<div ng-repeat="product in this.products"
+		class="card col-lg-4"
+		style="width: 18rem;">
+		<img class="card-img-top"
+			ng-src="products/images/{{product.image}}"
+			height="300px"
+			alt="Фото товара">
+		<div class="card-body">
+			<h5 class="card-title">{{ product.name }}</h5>
+			<p class="card-text">{{ product.description }}</p>
+			<a  ng-click="addToShopcart(product)"
+				href="#"
+				class="btn btn-primary">Купить {{ product.cost }} р.</a>
+		</div>
+	</div>
+</div>
